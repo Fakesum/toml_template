@@ -1,5 +1,5 @@
-__version__="1.0.0"
-__name__="toml_template"
+__version__ = '1.0.0'
+__name__ = 'toml_template'
 # don't change anything above this line
 
 import toml as __toml

@@ -23,4 +23,4 @@ elif len(args) == 1:
 
     os.system("python -m build")
     os.system("pip uninstall -y toml_template")
-    os.system("pip install "+os.path.join("dist", f"toml_template-{config['project']["version"]}-py3-non-any.whl"))
+    os.system("pip install "+os.path.join("dist", f"toml_template-{config['project']["version"]}-py3-none-any.whl"))
