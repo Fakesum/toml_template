@@ -17,10 +17,9 @@ elif len(args) == 1:
     open("version.txt", "w").write(args[0])
     config["project"]["version"] = args[0]
     toml.dump(config, open(PYPROJECT_TOML, "w"))
-    _init_file = open(f"src/{config["project"]["name"]}/__init__.py","r+")
-    buffer = _init_file.read().split("\n")[2:]
+    buffer = open(f"src/{config["project"]["name"]}/__init__.py","r").read().split("\n")[2:]
     buffer = f"__version__ = '{config["project"]["version"]}'\n__name__ = '{config["project"]["name"]}'\n"+('\n'.join(buffer))
-    _init_file.write(buffer)
+    open(f"src/{config["project"]["name"]}/__init__.py","w").write(buffer)
 
     os.system("python -m build")
     os.system("pip uninstall -y toml_template")
