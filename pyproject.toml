@@ -9,9 +9,14 @@ description = "A library to load a toml config using a template file for default
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
-[[project.authors]]
-name = "Fakesum"
-email = "worldanvilbild+github@gmail.com"
+authors = [{
+    name = "Fakesum",
+    email = "worldanvilbild+github@gmail.com"
+},
+{
+    name = "Medha Sharan",
+    email = "mc5695@srmist.edu.in"
+}]
 
 [project.urls]
 Homepage = "https://github.com/Fakesum/toml_template"
