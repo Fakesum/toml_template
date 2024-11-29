@@ -1,4 +1,2 @@
-[overriden]
-optional = true
-type = "float"
-default = 12.2
+overriden = {optional=false, type='float'}
+default = {optional=true, type='float', default=13.2}

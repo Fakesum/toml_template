@@ -1,4 +1,4 @@
-__version__ = '1.0.1a'
+__version__ = '1.0.1'
 __name__ = 'toml_template'
 # don't change anything above this line
 
@@ -35,6 +35,7 @@ def load_toml_with_template(filename: str, template_filename: str | None = None)
 
     TYPES = {
         "int": int,
+        'float': float,
         "str": str,
         'bool': bool
     }
@@ -45,7 +46,6 @@ def load_toml_with_template(filename: str, template_filename: str | None = None)
                 template_config[key]["optional"] = False
             
             if not key in config:
-                print(template_config[key])
                 if template_config[key]["optional"] == False:
                     raise TomlNotGiven(f"Parameter {key} is not given but it is required")
                 else:
