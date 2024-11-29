@@ -45,6 +45,7 @@ def load_toml_with_template(filename: str, template_filename: str | None = None)
                 template_config[key]["optional"] = False
             
             if not key in config:
+                print(template_config[key])
                 if template_config[key]["optional"] == False:
                     raise TomlNotGiven(f"Parameter {key} is not given but it is required")
                 else:

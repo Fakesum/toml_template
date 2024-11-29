@@ -1,0 +1,4 @@
+[overriden]
+optional = true
+type = "float"
+default = 12.2
