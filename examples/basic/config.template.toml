@@ -3,4 +3,4 @@ default = {optional=true, type='float', default=13.2}
 
 [heading]
 overriden = {optional=true, type='str', options=["A", "B", "C"], default="B"}
-default = {optional=true, default = 'B', type='str'}
+default = {optional=true, default = 'B', type='str', options=["A", "B", "C"]}

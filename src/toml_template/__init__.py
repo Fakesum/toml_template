@@ -1,4 +1,4 @@
-__version__ = '1.0.t'
+__version__ = '1.0.1'
 __name__ = 'toml_template'
 # don't change anything above this line
 
