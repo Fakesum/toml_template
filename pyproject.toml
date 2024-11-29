@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "toml_template"
-version = "1.0.t"
+version = "1.0.1"
 description = "A library to load a toml config using a template file for defaults."
 readme = "README.md"
 requires-python = ">=3.12"
