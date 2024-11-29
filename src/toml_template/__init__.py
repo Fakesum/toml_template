@@ -15,6 +15,7 @@ def load_toml_with_template(filename: str, template_filename: str | None = None)
         TomlValidationError
     )
 
+
     if template_filename == None:
         template_filename: str = filename.replace(".toml", ".template.toml")
     
@@ -41,6 +42,7 @@ def load_toml_with_template(filename: str, template_filename: str | None = None)
     }
 
     def _load_template(config, template_config):
+        print(template_config, config)
         for key in template_config:
             if not "optional" in template_config[key]:
                 template_config[key]["optional"] = False
